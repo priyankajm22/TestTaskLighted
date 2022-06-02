@@ -68,26 +68,21 @@ class HomeFragment : Fragment() {
 
 
     inner class PagerOrderAdapter
-    //  Initializing tab count
-    //  Constructor to the class
         (
-        fm: FragmentManager?, //integer to count number of tabs
+        fm: FragmentManager?,
     ) :
         FragmentStatePagerAdapter(fm!!) {
         override fun getPageTitle(position: Int): CharSequence? {
             return mTitleList[position]
         }
 
-        //Overriding method getItem
         override fun getItem(position: Int): Fragment {
-            //Returning the current tabs
-            return FragmentEventList.Companion.newInstance(
+             return FragmentEventList.Companion.newInstance(
                 mTitleList[position]
             )
         }
 
-        //Overridden method getCount to get the number of tabs
-        override fun getCount(): Int {
+         override fun getCount(): Int {
             return mTitleList.size
         }
 
@@ -97,9 +92,7 @@ class HomeFragment : Fragment() {
     public class FragmentEventList : Fragment() {
         private var _binding: FragmentListEventsBinding? = null
 
-        // This property is only valid between onCreateView and
-        // onDestroyView.
-        private val binding get() = _binding!!
+         private val binding get() = _binding!!
 
         companion object {
 
