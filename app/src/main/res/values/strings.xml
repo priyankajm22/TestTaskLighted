@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TestTaskLighted</string>
+    <string name="title_home">Home</string>
+    <string name="title_contribution">Contribution</string>
+    <string name="title_activity">Activity</string>
+    <string name="title_family">Family</string>
+    <string name="nav_drawer_opened">open</string>
+    <string name="nav_drawer_closed">close</string>
 </resources>
